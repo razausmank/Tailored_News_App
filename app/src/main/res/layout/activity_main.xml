@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:id="@+id/SearchBar">
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="20dp"
+            android:background="#ddd"
+            android:id="@+id/searchView"
+            android:backgroundTint="#C5CAE9">
+        </SearchView>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/MainTab"
+        android:layout_below="@+id/SearchBar"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#303F9F"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#C5CAE9"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/General"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:padding="5dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#C5CAE9"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/Sports"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:padding="5dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#C5CAE9"
+            >
+            <TextView
+                android:id="@+id/Business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:padding="5dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#C5CAE9"
+            >
+            <TextView
+                android:id="@+id/Entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"
+                android:padding="5dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#C5CAE9"
+            app:cardUseCompatPadding="true"
+            >
+            <TextView
+                android:id="@+id/Technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology"
+                android:padding="5dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="#C5CAE9"
+            >
+            <TextView
+                android:id="@+id/Science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:padding="5dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#C5CAE9"
+            app:cardUseCompatPadding="true"
+            >
+            <TextView
+                android:id="@+id/Health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:padding="5dp"
+                />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/MainTab"
+        android:id="@+id/FragmentPlaceHolder"
+        android:orientation="vertical"></FrameLayout>
+
+
+
+</RelativeLayout>
